@@ -65,8 +65,8 @@
     "context_set": ""
     },
     {"tag": "noprob",
-    "patterns": ["no problem", "no prob", "no worries", "of course", "anytime", "ok", "okay", "k", "alright", "alr", "cool", "nice", "awesome", "epic", "wonderful", "glad to hear", "good", "good to hear", ":)"],
-    "responses": ["wonerful, is there anything else I could help you with?", "Do you need any more assistance?", "what else can I do for you?"],
+    "patterns": ["no problem", "no prob", "no worries", "of course", "anytime", "ok", "okay", "k", "alright", "alr", "cool", "nice", "awesome", "epic", "wonderful", "glad to hear", "good", "good to hear", ":)", "yes please"],
+    "responses": ["wonerful, is there anything else I could help you with?", "Do you need any more assistance?", "what else can I do for you?", "how can I be of assistance?"],
     "context_set": ""
     },
     {"tag": "abilities",
@@ -92,6 +92,11 @@
     {"tag": "info",
     "patterns": ["are you watching me", "can you hear me", "can you see me", "what did I say", "my camera", "my information", "are you safe", "am I safe", "are you stealing my info", "are you collecting data", "are you storing my information", "are you collecting my information"],
     "responses": ["I do not have access to your information, files, camera, microphone, etc. I was created to help humans, and to not harm them."],
+    "context_set": ""
+    },
+    {"tag": "negative",
+    "patterns": ["no I don't", "I dont", "negative", "no thanks", "no thank you", "not now", "not right now", "no", "no its ok", "no its okay", "no im alright", "no its alright"],
+    "responses": ["thats fine. Just let me know if I can be of any assistance.", "alright, no worries at all."],
     "context_set": ""
     }
 ]
