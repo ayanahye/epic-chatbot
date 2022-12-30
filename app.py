@@ -1,6 +1,5 @@
 import random
 import json
-import pickle
 import numpy
 import nltk
 from flask import Flask, render_template, request, redirect, url_for
