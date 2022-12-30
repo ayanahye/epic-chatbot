@@ -25,8 +25,8 @@
     "context_set": ""
     },
     {"tag": "happy",
-    "patterns": ["happy", "good", "feel awesome", "chilling", ":)"],
-    "responses": ["Thats great!", "I am so happy to hear that", "great (:"],
+    "patterns": ["happy", "good", "feel awesome", "chilling", ":)", "im good"],
+    "responses": ["Thats great!", "I am so happy to hear that", "great (:", "cool cool"],
     "context_set": ""
     },
     {"tag": "angry",
@@ -97,6 +97,11 @@
     {"tag": "negative",
     "patterns": ["no I don't", "I dont", "negative", "no thanks", "no thank you", "not now", "not right now", "no", "no its ok", "no its okay", "no im alright", "no its alright"],
     "responses": ["thats fine. Just let me know if I can be of any assistance.", "alright, no worries at all."],
+    "context_set": ""
+    },
+    {"tag": "recommend",
+    "patterns": ["can you recommend", "do you know any", "do you know if", "any recommendations?", "anything like that?", "is there another way", "can you suggest", "any suggestions", "can you send"],
+    "responses": ["I cannot do that for you, I'm really sorry, once I am more developed I can perform those actions.", "I cannot perform that proccess right now, please check back at a later time."],
     "context_set": ""
     }
 ]
