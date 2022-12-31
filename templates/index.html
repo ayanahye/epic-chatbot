@@ -3,6 +3,7 @@
   <head>
     <title>Epic Robot Chat</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
   </head>
   <body>
     <div class="container">
@@ -12,10 +13,13 @@
       <main>
         <div class="messages">
           {% for message in messages %}
-            <div class="message">
+            <div class="message {{ 'sender-bot' if message.sender == 'bot' else 'sender-me' }}">
               <strong>{{ message.sender }}:</strong> {{ message.message }}
             </div>
           {% endfor %}
+          <div class="message {{ 'sender-creator' }}" class="delete">
+            <strong>ayana: </strong>type your message in the 'Message:' field ...
+          </div>
         </div>
         <form class="chat-form" action="/send_message" method="POST">
           <label for="message">Message:</label>

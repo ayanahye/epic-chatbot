@@ -1,91 +1,102 @@
+/* General styling for the page */
 body {
+  background-color: #f2f2f2;
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
-  background: #f7f7f7;
 }
 
+/* Container to hold the header, main content, and footer */
 .container {
   max-width: 800px;
   margin: 0 auto;
-  background: #fff;
-  border-radius: 5px;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
+  background-color: #7998EE;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
+/* Header styling */
 header {
-  background: #075e54;
-  color: #fff;
+  background-color: #556DC8;
+  color: rgb(255, 255, 255);
   padding: 20px;
-  text-align: center;
 }
 
 header h1 {
   margin: 0;
-  font-size: 20px;
+  text-align: center;
 }
 
+/* Main content styling */
 main {
   padding: 20px;
 }
 
-.messages {
+/* Style for the form used to send messages */
+.chat-form {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  margin-bottom: 20px;
+  width: 100%;
 }
 
-.message {
+.chat-form label,
+.chat-form input[type="submit"] {
   margin-bottom: 10px;
-  padding: 10px;
-  background: #dcf8c6;
-  border-radius: 5px;
-  color: #666;
-  font-size: 14px;
 }
 
-.message strong {
-  color: #333;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-}
-
-label {
-  font-size: 16px;
-  margin-bottom: 5px;
-}
-
-input[type="text"] {
-  font-size: 16px;
+/* this is the messages form */
+/* this is the messages form */
+.chat-form input[type="text"] {
+  width: 95%;
+  height: 50px;
+  margin: 0 auto; /* added */
+  font-size: 18px;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  width: 100%;
-  box-sizing: border-box;
 }
 
-input[type="submit"] {
-  font-size: 16px;
+.chat-form input[type="submit"] {
+  width: 100%;
+  font-size: 18px;
   padding: 10px;
   border: none;
   border-radius: 5px;
-  background: #075e54;
-  color: #fff;
+  background-color: #461E52;
+  color: white;
   cursor: pointer;
+}
+
+/* Style for the messages display */
+.messages {
+  display: flex;
+  flex-direction: column;
   width: 100%;
+  height: 50vh;
+  overflow-y: auto;
+  padding: 10px 0;
 }
 
-input[type="submit"]:hover {
-  background: #053c33;
+.message {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.8);
 }
 
+/* Style for messages sent by the user */
+.message.sender-me {
+  background-color: #DD517F;
+  color: #ffffff;
+}
+
+/* Style for messages sent by the bot */
+.message.sender-bot {
+  background-color: #E68E36;
+  color: #ffffff;
+}
+
+/* Footer styling */
 footer {
-  background: #075e54;
+  background-color: #556DC8;
   color: #fff;
   padding: 20px;
   text-align: center;
@@ -93,10 +104,27 @@ footer {
 
 footer p {
   margin: 0;
-  font-size: 14px;
 }
 
+.message.sender-creator {
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.8);
+  align-self: center;
+  background-color: #391a42;
+  color: white;
+}
 
-#delete {
-  margin-top: 10px;
+/* Responsive styling */
+@media only screen and (max-width: 600px) {
+  /* Make the container take up the full width of the screen on small screens */
+  .container {
+    width: 100%;
+    max-width: none;
+  }
+
+  /* Make the form and messages take up the full width of the screen on small screens */
+  .chat-form,
+  .messages {
+    width: 100%;
+  }
 }

@@ -1,5 +1,5 @@
 {"intents": [
-    {"tag": "greetings",
+    {"tag": "hi",
     "patterns": ["Hi", "anyone there?", "Hello", "Good day", "hii", "hiiii"],
     "responses": ["Hello", "Good to see you again", "Hi there, how can I help?", "hi friend"],
     "context_set": ""
@@ -102,6 +102,11 @@
     {"tag": "recommend",
     "patterns": ["can you recommend", "do you know any", "do you know if", "any recommendations?", "anything like that?", "is there another way", "can you suggest", "any suggestions", "can you send"],
     "responses": ["I cannot do that for you, I'm really sorry, once I am more developed I can perform those actions.", "I cannot perform that proccess right now, please check back at a later time."],
+    "context_set": ""
+    },
+    {"tag": "deleted",
+    "patterns": ["how come the messages deleted", "the messages are gone", "why did the messages disappear", "who deleted the messages?", "why are the messages gone", "how did the chat disappear", "why did you delete the messages", "why did you delete the chat", "how did you delete the chat"],
+    "responses": ["The chat was deleted for your convenience, so that the old messages can be replaced with the new ones, im very sorry if you did not want that.", "I have deleted the old messages to add the new ones, I hope this isn't too much of an issue.", "they have been deleted to support room for the new messages."],
     "context_set": ""
     }
 ]
