@@ -71,7 +71,7 @@
     },
     {"tag": "abilities",
     "patterns": ["tell me about yourself", "tell me about you", "what are you", "what can you do?", "what are your abilities", "why were you created", "why were you made", "abilities", "what are your skills", "how can you help", "how were you created", "how were you made", "who made you", "who created you", "what is your purpose", "who is your creator", "whos your creator"],
-    "responses": ["I am HelpBot, created by Ayana Hussain in December 2022. I use neural networks to provide the most probable response to a given input. There are still many ways I could be improved. I hope this helps."],
+    "responses": ["I am HelpBot, created by Ayana Hussain in December 2022. I use a machine learning model to provide the most probable response to a given input. There are still many ways I could be improved. I hope this helps."],
     "context_set": ""
     },
     {"tag": "coping sad",
